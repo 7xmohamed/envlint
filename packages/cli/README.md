@@ -5,13 +5,13 @@ Validate `.env` files against a committed schema and compare environments withou
 ## Install
 
 ```bash
-npm install -g dotlint
+npm install -g @7xmohamed/dotlint
 ```
 
 Or run it without installing:
 
 ```bash
-npx dotlint check
+npx @7xmohamed/dotlint check
 ```
 
 ## Quick start
