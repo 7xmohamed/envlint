@@ -1,5 +1,5 @@
 {
-  "name": "envlinter",
+  "name": "dotlint",
   "version": "1.0.1",
   "description": "Validate .env files against a schema and diff environments without exposing values.",
   "keywords": [
@@ -36,11 +36,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/7xmohamed/envlinter.git"
+    "url": "git+https://github.com/7xmohamed/dotlint.git"
   },
-  "homepage": "https://github.com/7xmohamed/envlinter#readme",
+  "homepage": "https://github.com/7xmohamed/dotlint#readme",
   "bugs": {
-    "url": "https://github.com/7xmohamed/envlinter/issues"
+    "url": "https://github.com/7xmohamed/dotlint/issues"
   },
   "publishConfig": {
     "access": "public"
