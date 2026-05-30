@@ -1,5 +1,5 @@
 version = 1
-name = "envlinter"
+name = "envlint"
 
 [[actions]]
 name = "Check"

@@ -67,7 +67,7 @@ function runCheck(args: CliArgs, fileSystem: FileSystem, colorEnabled: boolean):
     fileSystem,
     args.schemaPath,
     'schema file',
-    "Run 'envlinter init' to generate one from your existing .env file."
+    "Run 'envlint init' to generate one from your existing .env file."
   );
 
   const env = parseEnvContent(envContent);
@@ -108,7 +108,7 @@ function runSchema(args: CliArgs, fileSystem: FileSystem, colorEnabled: boolean)
     fileSystem,
     args.schemaPath,
     'schema file',
-    "Run 'envlinter init' to generate one from your existing .env file."
+    "Run 'envlint init' to generate one from your existing .env file."
   );
 
   return {

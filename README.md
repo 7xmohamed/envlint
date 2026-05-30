@@ -1,17 +1,17 @@
-# EnvLinter
+# envlint
 
 Validate `.env` files against a committed schema and compare environments without printing raw values.
 
 ## Install
 
 ```bash
-npm install -g envlinter
+npm install -g @7xmohamed/envlint
 ```
 
 Or run it without installing:
 
 ```bash
-npx envlinter check
+npx @7xmohamed/envlint check
 ```
 
 ## Quick start
@@ -19,54 +19,54 @@ npx envlinter check
 Generate a schema from an existing env file:
 
 ```bash
-envlinter init
+envlint init
 ```
 
 Validate your env file:
 
 ```bash
-envlinter check
+envlint check
 ```
 
 Compare multiple environments safely:
 
 ```bash
-envlinter diff .env .env.staging .env.production
+envlint diff .env .env.staging .env.production
 ```
 
 ## Commands
 
-### `envlinter check [file] [options]`
+### `envlint check [file] [options]`
 
 ```bash
-envlinter check
-envlinter check .env.staging
-envlinter check .env --schema .env.schema
-envlinter check .env --strict
-envlinter check .env --json
-envlinter check .env --quiet
-envlinter check .env --no-color
+envlint check
+envlint check .env.staging
+envlint check .env --schema .env.schema
+envlint check .env --strict
+envlint check .env --json
+envlint check .env --quiet
+envlint check .env --no-color
 ```
 
-### `envlinter diff <file1> <file2> [file3...] [options]`
+### `envlint diff <file1> <file2> [file3...] [options]`
 
 ```bash
-envlinter diff .env .env.staging
-envlinter diff .env .env.production --json
+envlint diff .env .env.staging
+envlint diff .env .env.production --json
 ```
 
-### `envlinter schema [options]`
+### `envlint schema [options]`
 
 ```bash
-envlinter schema
-envlinter schema --json
+envlint schema
+envlint schema --json
 ```
 
-### `envlinter init [options]`
+### `envlint init [options]`
 
 ```bash
-envlinter init
-envlinter init --from .env.staging --out .env.staging.schema
+envlint init
+envlint init --from .env.staging --out .env.staging.schema
 ```
 
 ## Exit codes

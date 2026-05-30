@@ -1,12 +1,12 @@
 export const HELP_TEXT = `
-envlinter - environment variable linter
+envlint - environment variable linter
 
 Usage:
-  envlinter check [<file>] [options]
-  envlinter diff <file1> <file2> [<file3>...] [options]
-  envlinter schema [options]
-  envlinter init [options]
-  envlinter help
+  envlint check [<file>] [options]
+  envlint diff <file1> <file2> [<file3>...] [options]
+  envlint schema [options]
+  envlint init [options]
+  envlint help
 
 Commands:
   check     Validate a .env file against a schema (default command)
@@ -25,12 +25,12 @@ Options:
   --help, -h             Show this help
 
 Examples:
-  envlinter check
-  envlinter check .env.staging
-  envlinter check .env --strict
-  envlinter diff .env .env.staging
-  envlinter schema --json
-  envlinter init --from .env.staging --out .env.staging.schema
+  envlint check
+  envlint check .env.staging
+  envlint check .env --strict
+  envlint diff .env .env.staging
+  envlint schema --json
+  envlint init --from .env.staging --out .env.staging.schema
 
 Exit codes:
   0  No errors found

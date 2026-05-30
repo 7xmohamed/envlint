@@ -1,5 +1,5 @@
 ---
-"envlinter": patch
+"@7xmohamed/envlint": patch
 ---
 
-Rename the project and published package from EnvLint to EnvLinter and publish the new unscoped npm package.
+Rename the project and published package from EnvLinter to envlint and publish as @7xmohamed/envlint.

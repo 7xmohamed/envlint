@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     tags:
-      - 'envlint@*'
+      - '@7xmohamed/envlint@*'
 
 jobs:
   publish:
@@ -24,6 +24,6 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm check
-      - run: pnpm --filter envlint publish --access public --provenance --no-git-checks
+      - run: pnpm --filter @7xmohamed/envlint publish --access public --provenance --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

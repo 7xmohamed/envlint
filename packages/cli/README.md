@@ -1,34 +1,34 @@
-# EnvLinter
+# envlint
 
 Validate `.env` files against a committed schema and compare environments without printing raw values.
 
 ## Install
 
 ```bash
-npm install -g envlinter
+npm install -g @7xmohamed/envlint
 ```
 
 Or run it without installing:
 
 ```bash
-npx envlinter check
+npx @7xmohamed/envlint check
 ```
 
 ## Quick start
 
 ```bash
-envlinter init
-envlinter check
-envlinter diff .env .env.staging .env.production
+envlint init
+envlint check
+envlint diff .env .env.staging .env.production
 ```
 
 ## Commands
 
 ```bash
-envlinter check [file] [--schema path] [--strict] [--json] [--quiet] [--no-color]
-envlinter diff <file1> <file2> [file3...] [--json]
-envlinter schema [--schema path] [--json]
-envlinter init [--from path] [--out path]
+envlint check [file] [--schema path] [--strict] [--json] [--quiet] [--no-color]
+envlint diff <file1> <file2> [file3...] [--json]
+envlint schema [--schema path] [--json]
+envlint init [--from path] [--out path]
 ```
 
 ## Exit codes

@@ -11,7 +11,7 @@ Contributions are welcome.
 
 ```bash
 git clone git@github.com:7xmohamed/envlinter.git
-cd envlinter
+cd envlint
 pnpm install
 pnpm check
 ```
@@ -45,7 +45,7 @@ pnpm test:e2e
 - Keep parsing and validation logic in `packages/core`.
 - Keep output formatting and process concerns in `packages/cli`.
 - Unknown flags and malformed invocations must fail with exit code `2`.
-- `envlinter diff` must never print raw values.
+- `envlint diff` must never print raw values.
 - Favor small, typed modules over broad utility layers.
 
 ## Release workflow
