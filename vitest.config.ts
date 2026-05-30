@@ -1,0 +1,11 @@
+import { defineConfig } from 'vitest/config';
+
+export default defineConfig({
+  test: {
+    include: ['packages/**/*.test.ts', 'tests/**/*.test.ts'],
+    coverage: {
+      reporter: ['text', 'lcov'],
+      include: ['packages/core/src/**/*.ts', 'packages/cli/src/**/*.ts']
+    }
+  }
+});

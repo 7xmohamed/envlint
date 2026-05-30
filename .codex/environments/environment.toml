@@ -1,0 +1,12 @@
+version = 1
+name = "envlinter"
+
+[[actions]]
+name = "Check"
+icon = "run"
+command = "pnpm check"
+
+[[actions]]
+name = "E2E"
+icon = "run"
+command = "pnpm test:e2e"

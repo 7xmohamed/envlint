@@ -13,6 +13,7 @@ pids
 
 # Dependency directories
 node_modules/
+.pnpm-store/
 
 # Environment files - never commit real secrets
 .env
@@ -38,3 +39,7 @@ Thumbs.db
 
 # Internal development artifacts - not part of the public tool
 dev/
+
+# Build artifacts
+coverage/
+packages/*/dist/

@@ -1,0 +1,52 @@
+{
+  "name": "envlinter",
+  "version": "1.0.1",
+  "description": "Validate .env files against a schema and diff environments without exposing values.",
+  "keywords": [
+    "env",
+    "dotenv",
+    "environment",
+    "variables",
+    "lint",
+    "schema",
+    "validation",
+    "cli"
+  ],
+  "type": "module",
+  "directories": {
+    "bin": "bin"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "bin",
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "node -e \"import('node:fs').then(fs => fs.rmSync('dist', { recursive: true, force: true }))\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7xmohamed/envlinter.git"
+  },
+  "homepage": "https://github.com/7xmohamed/envlinter#readme",
+  "bugs": {
+    "url": "https://github.com/7xmohamed/envlinter/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "license": "MIT"
+}
