@@ -1,0 +1,40 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+# Environment files - never commit real secrets
+.env
+.env.local
+.env.staging
+.env.production
+.env.*.local
+
+# But do commit the schema (it has no values)
+!.env.schema
+!.env.schema.example
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Internal development artifacts - not part of the public tool
+dev/

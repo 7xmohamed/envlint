@@ -1,0 +1,29 @@
+{
+  "name": "envlint",
+  "version": "1.0.0",
+  "description": "A zero-dependency CLI to validate .env files against a declared schema and diff environments",
+  "main": "cli.js",
+  "bin": {
+    "envlint": "./cli.js"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "environment",
+    "variables",
+    "lint",
+    "schema",
+    "validation",
+    "cli",
+    "devops"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {}
+}
