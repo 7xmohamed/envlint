@@ -1,6 +1,6 @@
 {
   "name": "@7xmohamed/envlint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Validate .env files against a schema and diff environments without exposing values.",
   "keywords": [
     "env",
