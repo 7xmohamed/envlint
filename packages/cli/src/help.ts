@@ -1,12 +1,12 @@
 export const HELP_TEXT = `
-dotlint - environment variable linter
+envlinter - environment variable linter
 
 Usage:
-  dotlint check [<file>] [options]
-  dotlint diff <file1> <file2> [<file3>...] [options]
-  dotlint schema [options]
-  dotlint init [options]
-  dotlint help
+  envlinter check [<file>] [options]
+  envlinter diff <file1> <file2> [<file3>...] [options]
+  envlinter schema [options]
+  envlinter init [options]
+  envlinter help
 
 Commands:
   check     Validate a .env file against a schema (default command)
@@ -25,12 +25,12 @@ Options:
   --help, -h             Show this help
 
 Examples:
-  dotlint check
-  dotlint check .env.staging
-  dotlint check .env --strict
-  dotlint diff .env .env.staging
-  dotlint schema --json
-  dotlint init --from .env.staging --out .env.staging.schema
+  envlinter check
+  envlinter check .env.staging
+  envlinter check .env --strict
+  envlinter diff .env .env.staging
+  envlinter schema --json
+  envlinter init --from .env.staging --out .env.staging.schema
 
 Exit codes:
   0  No errors found

@@ -30,7 +30,7 @@ function runBuild(): void {
 }
 
 function createTempDir(): string {
-  const directory = mkdtempSync(path.join(tmpdir(), 'dotlint-'));
+  const directory = mkdtempSync(path.join(tmpdir(), 'envlinter-'));
   tempDirectories.push(directory);
   return directory;
 }
@@ -69,7 +69,7 @@ afterEach(() => {
   }
 });
 
-describe('dotlint CLI', () => {
+describe('envlinter CLI', () => {
   it('reports success for a valid env file', () => {
     const directory = createTempDir();
     writeFileSync(path.join(directory, '.env'), 'PORT=3000\n');

@@ -10,5 +10,5 @@ Please report security issues privately through GitHub security advisories or by
 
 ## Security guarantees
 
-- `dotlint diff` must never print raw values.
+- `envlinter diff` must never print raw values.
 - JSON and text validation output may include keys and diagnostics, but not redacted secret values because EnvLinter validates files locally rather than transmitting them.

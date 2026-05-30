@@ -1,5 +1,5 @@
 {
-  "name": "dotlint-workspace",
+  "name": "envlinter-workspace",
   "version": "1.0.1",
   "private": true,
   "packageManager": "pnpm@10.15.1",

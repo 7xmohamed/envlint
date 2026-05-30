@@ -15,7 +15,7 @@
     "esModuleInterop": false,
     "baseUrl": ".",
     "paths": {
-      "@dotlint/core": [
+      "@envlinter/core": [
         "packages/core/src/index.ts"
       ]
     }

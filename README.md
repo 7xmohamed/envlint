@@ -5,13 +5,13 @@ Validate `.env` files against a committed schema and compare environments withou
 ## Install
 
 ```bash
-npm install -g @7xmohamed/dotlint
+npm install -g envlinter
 ```
 
 Or run it without installing:
 
 ```bash
-npx @7xmohamed/dotlint check
+npx envlinter check
 ```
 
 ## Quick start
@@ -19,54 +19,54 @@ npx @7xmohamed/dotlint check
 Generate a schema from an existing env file:
 
 ```bash
-dotlint init
+envlinter init
 ```
 
 Validate your env file:
 
 ```bash
-dotlint check
+envlinter check
 ```
 
 Compare multiple environments safely:
 
 ```bash
-dotlint diff .env .env.staging .env.production
+envlinter diff .env .env.staging .env.production
 ```
 
 ## Commands
 
-### `dotlint check [file] [options]`
+### `envlinter check [file] [options]`
 
 ```bash
-dotlint check
-dotlint check .env.staging
-dotlint check .env --schema .env.schema
-dotlint check .env --strict
-dotlint check .env --json
-dotlint check .env --quiet
-dotlint check .env --no-color
+envlinter check
+envlinter check .env.staging
+envlinter check .env --schema .env.schema
+envlinter check .env --strict
+envlinter check .env --json
+envlinter check .env --quiet
+envlinter check .env --no-color
 ```
 
-### `dotlint diff <file1> <file2> [file3...] [options]`
+### `envlinter diff <file1> <file2> [file3...] [options]`
 
 ```bash
-dotlint diff .env .env.staging
-dotlint diff .env .env.production --json
+envlinter diff .env .env.staging
+envlinter diff .env .env.production --json
 ```
 
-### `dotlint schema [options]`
+### `envlinter schema [options]`
 
 ```bash
-dotlint schema
-dotlint schema --json
+envlinter schema
+envlinter schema --json
 ```
 
-### `dotlint init [options]`
+### `envlinter init [options]`
 
 ```bash
-dotlint init
-dotlint init --from .env.staging --out .env.staging.schema
+envlinter init
+envlinter init --from .env.staging --out .env.staging.schema
 ```
 
 ## Exit codes

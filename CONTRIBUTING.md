@@ -10,8 +10,8 @@ Contributions are welcome.
 ## Setup
 
 ```bash
-git clone git@github.com:7xmohamed/dotlint.git
-cd dotlint
+git clone git@github.com:7xmohamed/envlinter.git
+cd envlinter
 pnpm install
 pnpm check
 ```
@@ -45,7 +45,7 @@ pnpm test:e2e
 - Keep parsing and validation logic in `packages/core`.
 - Keep output formatting and process concerns in `packages/cli`.
 - Unknown flags and malformed invocations must fail with exit code `2`.
-- `dotlint diff` must never print raw values.
+- `envlinter diff` must never print raw values.
 - Favor small, typed modules over broad utility layers.
 
 ## Release workflow

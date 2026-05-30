@@ -1,5 +1,5 @@
 {
-  "name": "@dotlint/core",
+  "name": "@envlinter/core",
   "version": "1.0.1",
   "private": true,
   "type": "module",

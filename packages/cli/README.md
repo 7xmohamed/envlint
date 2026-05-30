@@ -5,30 +5,30 @@ Validate `.env` files against a committed schema and compare environments withou
 ## Install
 
 ```bash
-npm install -g @7xmohamed/dotlint
+npm install -g envlinter
 ```
 
 Or run it without installing:
 
 ```bash
-npx @7xmohamed/dotlint check
+npx envlinter check
 ```
 
 ## Quick start
 
 ```bash
-dotlint init
-dotlint check
-dotlint diff .env .env.staging .env.production
+envlinter init
+envlinter check
+envlinter diff .env .env.staging .env.production
 ```
 
 ## Commands
 
 ```bash
-dotlint check [file] [--schema path] [--strict] [--json] [--quiet] [--no-color]
-dotlint diff <file1> <file2> [file3...] [--json]
-dotlint schema [--schema path] [--json]
-dotlint init [--from path] [--out path]
+envlinter check [file] [--schema path] [--strict] [--json] [--quiet] [--no-color]
+envlinter diff <file1> <file2> [file3...] [--json]
+envlinter schema [--schema path] [--json]
+envlinter init [--from path] [--out path]
 ```
 
 ## Exit codes
